@@ -6,3 +6,6 @@
 
 ### brain-cacl:
 [![asciicast](https://asciinema.org/a/E3QhZ7RJn2aKgEtfBZRpSlSPl.svg)](https://asciinema.org/a/E3QhZ7RJn2aKgEtfBZRpSlSPl)
+
+### brain-gcd:
+[![asciicast](https://asciinema.org/a/F0kTA7kpv2saV5qZeCEYtyNok.svg)](https://asciinema.org/a/F0kTA7kpv2saV5qZeCEYtyNok)

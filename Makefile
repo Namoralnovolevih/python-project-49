@@ -21,3 +21,6 @@ brain-even:
 
 brain-cacl:
 	poetry run brain-cacl
+
+brain-gcd:
+	poetry run brain-gcd
