@@ -18,3 +18,6 @@ make-lint:
 
 brain-even:
 	poetry run brain-even
+
+brain-cacl:
+	poetry run brain-cacl
