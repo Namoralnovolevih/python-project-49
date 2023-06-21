@@ -4,6 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Dmitrii"]
 readme = "README.md"
+repository = "https://github.com/Namoralnovolevih/python-project-49.git"
 packages = [
   { include = "brain_games" },
 ]
@@ -27,3 +28,7 @@ brain-cacl = "brain_games.scripts.brain_cacl:main"
 brain-gcd = "brain_games.scripts.brain_gcd:main"
 brain-progression = "brain_games.scripts.brain_progression:main"
 brain-prime = "brain_games.scripts.brain_prime:main"
+
+[tool.poetry.classifiers]
+python_versions = ">=3.6, <3.11"
+operating_systems = "OS Ubuntu"
