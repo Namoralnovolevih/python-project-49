@@ -10,5 +10,5 @@ def run_game(game_task, game_specifics):
     while index < windscore:
         index += 1
         if not game_specifics():
-            return print(f"Let's try again, {name}")
+            return print(f"Let's try again, {name}!")
     return print(f'Congratulations, {name}!')
