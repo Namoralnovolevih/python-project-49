@@ -19,8 +19,8 @@ make-lint:
 brain-even:
 	poetry run brain-even
 
-brain-cacl:
-	poetry run brain-cacl
+brain-calc:
+	poetry run brain-calc
 
 brain-gcd:
 	poetry run brain-gcd
