@@ -2,7 +2,7 @@ import random
 import prompt
 
 
-GAME_QUIESTION = 'What number is missing in the progression?'
+GAME_QUIESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def game_specifics():
