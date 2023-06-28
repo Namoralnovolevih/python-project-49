@@ -1,5 +1,5 @@
 import prompt
-import random 
+import random
 
 
 GAME_QUIESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
@@ -16,8 +16,8 @@ def game_specifics():
         print("Correct!")
         return True
     elif number % 2 == 0 and answer.lower() != "yes":
-        print(f"'no' is wrong answer ;(. Correct answer was 'yes'.")
+        print("'no' is wrong answer ;(. Correct answer was 'yes'.")
         return False
     elif number % 2 != 0 and answer.lower() != "no":
-        print(f"'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
         return False

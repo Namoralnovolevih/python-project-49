@@ -22,8 +22,8 @@ def game_specifics():
         print("Correct!")
         return True
     elif is_prime is True and answer.lower() == "no":
-        print(f"'no' is wrong answer ;(. Correct answer was 'yes'.")
+        print("'no' is wrong answer ;(. Correct answer was 'yes'.")
         return False
     elif is_prime is False and answer.lower() == "yes":
-        print(f"'yes' is wrong answer ;(. Correct answer was 'no'.")
+        print("'yes' is wrong answer ;(. Correct answer was 'no'.")
         return False

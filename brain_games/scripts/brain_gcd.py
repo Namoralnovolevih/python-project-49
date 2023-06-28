@@ -6,5 +6,6 @@ from brain_games.games.gcd_game import GAME_QUIESTION, game_specifics
 def main():
     run_game(GAME_QUIESTION, game_specifics)
 
+
 if __name__ == '__main__':
     main()
