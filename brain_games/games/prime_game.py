@@ -15,10 +15,8 @@ def game_specifics():
             is_prime = False
             break
 
-    if is_prime is True and answer.lower() == "yes":
-        print("Correct!")
-        return True
-    elif is_prime is False and answer.lower() == "no":
+    if is_prime is True and answer.lower() == "yes" \
+            or is_prime is False and answer.lower() == "no":
         print("Correct!")
         return True
     elif is_prime is True and answer.lower() == "no":
