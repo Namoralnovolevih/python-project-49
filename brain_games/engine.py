@@ -16,5 +16,6 @@ def run_game(game_task, game_specifics):
             print("Correct!")
         else:
             print(f"{answer} is wrong answer ;(. Correct answer was {result}.")
-            return f"Let's try again, {name}!"
+            print(f"Let's try again, {name}!")
+            return
     return print(f'Congratulations, {name}!')
