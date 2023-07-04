@@ -15,7 +15,6 @@ def run_game(game_task, game_specifics):
         if answer == result:
             print("Correct!")
         else:
-            bn = f""""{answer} is wrong answer ;(. Correct answer was {result}.
-Let's try again, {name}!"""
-            return bn
+            print(f"{answer} is wrong answer ;(. Correct answer was {result}.")
+            return f"Let's try again, {name}!"
     return print(f'Congratulations, {name}!')
