@@ -9,6 +9,13 @@ def run_game(game_task, game_specifics):
     windscore = 3
     while index < windscore:
         index += 1
-        if not game_specifics():
-            return print(f"Let's try again, {name}!")
+        question, result = game_specifics()
+        print("Question:", question)
+        answer = prompt.string('Your answer: ')
+        if answer == result:
+            print("Correct!")
+        else:
+            bn = f""""{answer} is wrong answer ;(. Correct answer was {result}.
+Let's try again, {name}!"""
+            return bn
     return print(f'Congratulations, {name}!')
