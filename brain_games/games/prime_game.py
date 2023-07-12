@@ -9,9 +9,8 @@ MAX_NUMBER = 100
 def prime_number_check(number):
     for i in range(2, number):
         if number % i == 0:
-            return True
-        else:
             return False
+    return True
 
 
 def question_and_answer():
