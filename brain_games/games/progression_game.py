@@ -12,9 +12,9 @@ def progression_members():
     return progression
 
 
-def transformation(progression_members):
-    progression_str = ' '.join(map(str, progression_members()))
-    random_number = random.choice(progression_members())
+def transformation(progression):
+    progression_str = ' '.join(map(str, progression))
+    random_number = random.choice(progression)
     return progression_str.replace(str(random_number), ".."), random_number
 
 
