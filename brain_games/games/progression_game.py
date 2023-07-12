@@ -18,6 +18,6 @@ def transformation(progression_members):
     return progression_str.replace(str(random_number), ".."), random_number
 
 
-def question_and_answer(transformation):
+def question_and_answer():
     question, result = transformation()
     return question, str(result)
