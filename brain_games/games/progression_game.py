@@ -19,5 +19,5 @@ def transformation(progression_members):
 
 
 def question_and_answer():
-    question, result = transformation(progression_members)
+    question, result = transformation(progression_members())
     return question, str(result)
