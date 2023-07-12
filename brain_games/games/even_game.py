@@ -1,7 +1,7 @@
 import random
 
 
-GAME_QUIESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+G_QUIESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 

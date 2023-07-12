@@ -1,7 +1,7 @@
 import random
 
 
-GAME_QUIESTION = 'What number is missing in the progression?'
+G_QUIESTION = 'What number is missing in the progression?'
 MIN_NUMBER = 2
 MAX_NUMBER = 5
 

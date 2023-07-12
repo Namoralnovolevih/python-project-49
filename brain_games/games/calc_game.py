@@ -1,7 +1,7 @@
 import random
 
 
-GAME_QUIESTION = "What is the result of the expression?"
+G_QUIESTION = "What is the result of the expression?"
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 

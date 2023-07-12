@@ -1,7 +1,7 @@
 import random
 
 
-GAME_QUIESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+G_QUIESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 MIN_NUMBER = 2
 MAX_NUMBER = 100
 
