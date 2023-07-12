@@ -2,14 +2,23 @@ import random
 
 
 GAME_QUIESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def game_specifics():
-    number = random.randint(1, 100)
-    question = number
+def сhecking_for_even(number):
     if number % 2 == 0:
+        return True
+    else:
+        return False
+
+
+def question_and_answer():
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    question = number
+    if сhecking_for_even(number) is True:
         result = "yes"
         return question, result
-    elif number % 2 != 0:
+    else:
         result = "no"
         return question, result

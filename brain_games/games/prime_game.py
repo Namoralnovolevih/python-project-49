@@ -2,20 +2,24 @@ import random
 
 
 GAME_QUIESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN_NUMBER = 2
+MAX_NUMBER = 100
 
 
-def game_specifics():
-    number = random.randint(2, 200)
-    question = number
-    is_prime = True
+def prime_number_check(number):
     for i in range(2, number):
         if number % i == 0:
-            is_prime = False
-            break
+            return True
+        else:
+            return False
 
-    if is_prime is True:
+
+def question_and_answer():
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    question = number
+    if prime_number_check(number) is True:
         result = "yes"
         return question, result
-    elif is_prime is False:
+    else:
         result = "no"
         return question, result

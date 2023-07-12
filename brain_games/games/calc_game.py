@@ -2,11 +2,13 @@ import random
 
 
 GAME_QUIESTION = "What is the result of the expression?"
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 
 
-def game_specifics():
-    number = random.randint(1, 100)
-    number2 = random.randint(1, 100)
+def question_and_answer():
+    number = random.randint(MIN_NUMBER, MAX_NUMBER)
+    number2 = random.randint(MIN_NUMBER, MAX_NUMBER)
     operations = ['+', '-', '*']
     operation = random.choice(operations)
     question = f'{number} {operation} {number2}'

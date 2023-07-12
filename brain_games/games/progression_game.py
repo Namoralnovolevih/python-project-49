@@ -1,12 +1,23 @@
 import random
 
+
 GAME_QUIESTION = 'What number is missing in the progression?'
+MIN_NUMBER = 2
+MAX_NUMBER = 5
 
 
-def game_specifics():
-    random_step = random.randint(2, 5)
+def progression_members():
+    random_step = random.randint(MIN_NUMBER, MAX_NUMBER)
     progression = list(range(10, 60, random_step))
-    result = random.choice(progression)
-    progression_str = ' '.join(map(str, progression))
-    question = progression_str.replace(str(result), "..")
+    return progression
+
+
+def transformation(progression_members):
+    progression_str = ' '.join(map(str, progression_members()))
+    random_number = random.choice(progression_members())
+    return progression_str.replace(str(random_number), ".."), random_number
+
+
+def question_and_answer(transformation):
+    question, result = transformation()
     return question, str(result)

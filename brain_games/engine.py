@@ -1,15 +1,17 @@
 import prompt
 
 
-def run_game(game_task, game_specifics):
+NUMBER_OF_ROUNDS = 3
+
+
+def run_game(task, question_and_answer):
     print("Welcom to the brain games!")
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n{game_task}')
+    print(f'Hello, {name}!\n{task}')
     index = 0
-    windscore = 3
-    while index < windscore:
+    while index < NUMBER_OF_ROUNDS:
         index += 1
-        question, result = game_specifics()
+        question, result = question_and_answer()
         print("Question:", question)
         answer = prompt.string('Your answer: ')
         if answer == result:
