@@ -4,14 +4,14 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def run_game(task, question_and_answer):
+def run_game(game):
     print("Welcom to the brain games!")
     name = prompt.string('May I have your name? ')
-    print(f'Hello, {name}!\n{task}')
+    print(f'Hello, {name}!\n{game.G_QUIESTION}')
     index = 0
     while index < NUMBER_OF_ROUNDS:
         index += 1
-        question, result = question_and_answer()
+        question, result = game.question_and_answer()
         print("Question:", question)
         answer = prompt.string('Your answer: ')
         if answer == result:
