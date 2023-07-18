@@ -4,7 +4,7 @@ import prompt
 NUMBER_OF_ROUNDS = 3
 
 
-def run_game(game):
+def run(game):
     print("Welcom to the brain games!")
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!\n{game.G_QUIESTION}')

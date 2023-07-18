@@ -4,11 +4,12 @@ import random
 G_QUIESTION = 'What number is missing in the progression?'
 MIN_NUMBER = 2
 MAX_NUMBER = 5
-
+P_NUM_MIN = 10
+P_NUM_MAX = 60
 
 def progression_members():
     random_step = random.randint(MIN_NUMBER, MAX_NUMBER)
-    progression = list(range(10, 60, random_step))
+    progression = list(range(P_NUM_MIN, P_NUM_MAX, random_step))
     return progression
 
 
