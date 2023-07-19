@@ -7,6 +7,7 @@ MAX_NUMBER = 5
 P_NUM_MIN = 10
 P_NUM_MAX = 60
 
+
 def progression_members():
     random_step = random.randint(MIN_NUMBER, MAX_NUMBER)
     progression = list(range(P_NUM_MIN, P_NUM_MAX, random_step))
